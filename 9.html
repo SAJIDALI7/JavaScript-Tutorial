@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="hel">IndeXing</title>
+</head>
+<body>
+    <h1>hello,</h1>
+    <h1> friends</h1>
+    <h1> Good, Morning</h1>
+    <div>
+        <p class="hel">this is </p>
+        <p class="hel">with</p>
+        <p class="hel">class paragraph</p>
+    </div>
+
+    <script>
+        let a = document.getElementsByClassName("hel");
+        let b = a.length;
+        for(let i = 0; i < b; i ++){
+            let c = document.getElementsByClassName("hel")[i];
+            document.write(c + " index of:- "+ i + "<br>");
+            console.log(c);
+        }
+    </script>
+</body>
+</html>

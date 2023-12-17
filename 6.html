@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tree</title>
+</head>
+<body>
+    <p class="hel">hello, 
+        <span>my name is hello, world</span>
+    </p>
+    <div class="name">
+        <p>
+            <span>hello, world</span> <br>
+            <span>hello, world</span> <br>
+            <span>hello, world</span>
+        </p>
+    </div>
+    <div class="hel name">
+        <p>
+            <span>hello, world</span> <br>
+            <span>hello, world</span> <br>
+            <span>hello, world</span>
+        </p>
+    </div>
+    <script>
+        let a = document.getElementsByClassName("name");
+        document.write(a)
+        console.log(a)
+        let b = document.getElementsByClassName("hel name");
+        document.write(b)
+        console.log(b);
+        let c = document.getElementsByClassName("hel");
+        document.write(c)
+        console.log(c);
+    </script>
+</body>
+</html>
