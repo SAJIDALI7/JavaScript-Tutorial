@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next siblings & Next Element siblings</title>
+</head>
+<body>
+    <h1 id="myid">
+        <span>this is my class</span>
+        <em>get out from here</em>
+    </h1>
+    <p id="rit">thi sis para</p>
+    <p id="hel">this is para tag</p>
+
+    <script>
+        let a = document.getElementById('myid');
+        console.log(a.firstElementChild.nextElementSibling);
+    </script>
+</body>
+</html>

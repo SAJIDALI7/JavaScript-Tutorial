@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatong Text node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>this is heading</h1>
+        <h3>this is subheading</h3>
+    </div>
+
+    <script>
+        // let a = document.createTextNode("this is appending into div");
+        let b = document.getElementById('myid');
+        // b.appendChild(a);
+        // console.log(b);
+
+        // appending with creating 
+        b.appendChild(document.createTextNode("this is appending into div"));
+        console.log(b);
+    </script>
+</body>
+</html>
