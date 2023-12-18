@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last childNodes & last Element child</title>
+</head>
+<body>
+    <h1 id="hel">
+        <span>this is hello world...</span>
+        <em>this is eme tag</em>
+    </h1>
+    <p id="myid1">this is paragraph with id</p>
+    <p id="myid2">this is paragraph</p>
+
+    <script>
+        let a = document.getElementById('hel');
+        // document.write(a.lastChild)
+        // console.log(a.lastChild);
+        // document.write(a.lastElementChild)
+        // console.log(a.lastElementChild);
+        a.lastElementChild.textContent = "this is manipulating"
+        document.write()
+    </script>
+</body>
+</html>

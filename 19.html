@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First childNodes & firstElementNode</title>
+</head>
+<body>
+    <h1 id="hit">
+        <span>this is heading</span>
+        <em>this is tag</em>
+    </h1>
+    <p id="eat">paragraph</p>
+    <span>outside</span>
+
+    <script>
+        let a = document.getElementById('hit');
+        // accessing 
+        // console.log(a.firstChild)
+        // console.log(a.firstElementChild.)
+
+        // Accessing text
+
+        // document.write(a.firstElementChild.textContent)
+
+        // manipulating text
+
+        // a.firstElementChild.textContent = "this is manipulating"
+        a.firstChild.textContent = "this is manipulating"
+        // document.write()
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous siblings & PreviousElementSiblig</title>
+</head>
+<body>
+    <h1 id="hel">
+        <span>this is the Span tag</span>
+        <em>this emmet</em> <!--this is comment-->
+
+    </h1>
+
+    <p id="tis">this para</p>
+    <p id="his">his para</p>
+
+    <script>
+        let a = document.getElementById("hel")
+        // console.log(a.lastChild.previousSibling);
+        console.log(a.lastElementChild.previousElementSibling);
+    </script>
+</body>
+</html>

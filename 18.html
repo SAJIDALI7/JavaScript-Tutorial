@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildNodes anD ChildrenNode</title>
+</head>
+<body >
+    <h1 id="pit">
+        <!-- this is comment -->
+        <span>This is heading tag</span>
+        <em>this em tag</em>
+
+    </h1>
+    <p id="myid1">this para tag <!-- this is comment --></p>
+    <p id="myid2">this is p tag <span>inside</span></p>
+
+    <script>
+        // let a = document.getElementById('myid2');
+        // console.log(a.childNodes)
+        // console.log(a.children)
+
+        // length
+
+        let a = document.getElementById('pit');
+        // console.log(a.childNodes[0]);
+        // console.log(a.children[0]);
+
+        // let b = a.children.length;
+        // for(let i = 0; i < b; i ++){   
+        //     // let c = a.childNodes[i]
+        //     let c = a.children[i]
+        //     document.write(c.textContent + "<br >");
+        //     console.log(c);
+        // }
+
+        // change the value 
+        let b = a.children[0].textContent = "this value is changed"
+    </script>
+</body>
+</html>
