@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accessing Attributes Properties</title>
+    </head>
+    <body>
+        <h1 id="myid" class="heading">
+            this is my heading
+        </h1>
+        <p class="para">
+            this is Paragraph
+        </p>
+
+        <script>
+            let a = document.getElementById("myid");
+
+            // ID Attributes
+            // document.write(a.attributes[0].nodeName + " = ");
+            // document.write(a.attributes[0].nodeValue + "<br>");
+
+            // class Attributes
+            // document.write(a.attributes[1].nodeName + " = ");
+            // document.write(a.attributes[1].nodeValue);
+
+            // length available Attributes
+            // document.write(document.getElementById("myid").attributes.length)
+            // console.log(document.getElementById("myid").attributes.length);
+
+            // For loop through Accessing attributes
+
+            let b = a.attributes.length;
+            for(let  i = 0; i < b; i++){
+                document.write(a.attributes[i].name + " = ");
+                document.write(a.attributes[i].value +  " index of:- "+ i +"<br>");
+
+            }
+        </script>
+    </body>
+</html>

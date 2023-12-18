@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector More Specific</title>
+</head>
+<body>
+    <div>
+        <h5 class="hit">
+            <span>hello, world</span>
+            <p>Paragraph tag is arrived</p>
+            <p class="hit"> inside H5 </p>
+        </h5>
+    </div>
+
+    <div id="hit">
+        <p>this is me Paragraph</p>
+        <p>this is adding <span class="hel">span tag on Paragraph</span></p>
+        <p class="hit">this is Paragraph with class</p>
+        <span>this i span </span>
+    </div>
+
+
+    <script>
+        // let a = document.getElementById("ht")
+        // let b = document.querySelectorAll("span")
+        // for (let i = 0; i < b.length; i ++){
+        //     let c = document.querySelectorAll('span')[i];
+        //     document.write(c + "  index of:- " + i +"<br>" )
+        //     console.log(c);
+        // }
+
+        let a = document.querySelectorAll(".hit");
+        let b = a.length;
+        // document.write(a + "<br>");
+        // console.log(a);
+        // document.write(b);
+        // console.log(b);
+
+        for(let i = 0; i < b; i ++){
+            let c = document.querySelectorAll(".hit")[i];
+            document.write(c + "  index of :-  " + [i] + "<br>");
+            console.log(c);
+        }
+    </script>
+</body>
+</html>

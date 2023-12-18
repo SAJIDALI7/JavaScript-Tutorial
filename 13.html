@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector All</title>
+</head>
+<body>
+    <div>
+        <p class="vit">this is query ALL</p>
+        <p class="vit">Selector</p>
+        <p class="vit">Method</p>
+    </div>
+    <h1>hello, friends</h1>
+    <div id="right">
+        <p>this is</p>
+        <p>ID</p>
+        <p>Selector</p>
+    </div>
+    <div id="fit">
+        <p>this is</p>
+        <p>ATTRIBUTE</p>
+        <p>Selector</p>
+    </div>
+
+    <script>
+        // ELEMENT SELECTOR
+
+        // let a = document.querySelectorAll("p");
+        // document.write(a)
+        // console.log(a);
+
+        // let a = document.querySelectorAll("p, h1")
+        // document.write(a)
+        // console.log(a);
+
+        // ID SELECTOR
+
+        // let a = document.querySelectorAll("#right");
+        // document.write(a)
+        // console.log(a);
+
+
+        // CLASS SELECTOR
+        // let a = document.querySelectorAll(".vit") ;
+        // document.write(a)
+        // console.log(a);
+
+        // ATTRIBUTE SELECTOR
+
+        let a = document.querySelectorAll("div[id]");
+        document.write(a);
+        console.log(a);
+    </script>
+</body>
+</html>
