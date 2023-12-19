@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET & GET ATTRIBUTE method</title>
+</head>
+<body>
+    <p id="myid" class="myclass">this is paragraph</p>
+
+    <script>
+        let a = document.getElementById('myid');
+        a.setAttribute("class", "helloworld")
+        // a.setAttribute("style", "font-style: italic") // this approach will be overwrite youe css design
+        let b = a.getAttribute('id')
+        console.log(a);
+        console.log(b);
+    </script>
+</body>
+</html>

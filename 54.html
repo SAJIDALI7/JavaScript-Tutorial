@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTE PROPERTY</title>
+</head>
+<body>
+    <h1 id="fit" title="hading" class="heading"> hello, world </h1>
+
+    <script>
+        let a = document.getElementById("fit");
+
+        console.log(a.attributes[0]); // index through accessig attribute
+        console.log(a.attributes); // List through accessig attribute
+        console.log(a.attributes['id']); // name through accessig attribute
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE node</title>
+</head>
+<body>
+    <ul id="myid">
+        <li>Item with id</li>
+        <li id="eit">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        // let a = document.getElementById("myid");
+
+        let b = document.getElementById("eit");
+
+        // a.removeChild(b)
+
+        // if ID is no exists
+
+        // a.removeChild(a.firstElementChild)
+
+        // a.removeChild(a.childNodes[1]);
+
+        // console.log(a);
+
+        // without perent node
+
+        b.parentNode.removeChild(b);
+    </script>
+</body>
+</html>

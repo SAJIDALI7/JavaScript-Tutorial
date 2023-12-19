@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ATTRIBUTE | DOM PROPERTY</title>
+</head>
+<body>
+    <h2 id="myid" title="heading" class="myclass">this is heading</h2>
+
+    <script>
+        let a = document.getElementById("myid");
+        console.log(a.className);
+        console.log(a.id);
+        console.log(Object.prototype.toString.call(a));
+        // change class name
+        a.className = "myperfectclass"
+        console.log(a.className);
+        // change ID value
+        a.id = "my"
+        console.log(a.id);
+
+        // change title name
+        a.title = "title"
+        console.log(a.title);
+    </script>
+</body>
+</html>

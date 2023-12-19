@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Node</title>
+</head>
+<body>
+    <ul id="myid">
+        <li id="i1">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <span id="s1">this is sapna</span>
+    <script>
+        let a = document.getElementById('myid'); // perent node
+        // console.log(a);
+        let b = document.getElementById('i1'); // reference node
+        // console.log(b.innerHTML);
+
+        // let c = document.createElement("li");
+        // c.textContent = "this is new";
+
+        // a.replaceChild(c, b)
+
+        // if item is exists
+
+        let ex = document.getElementById('s1'); // replacing node
+
+        a.replaceChild(ex, b);
+    </script>
+</body>
+</html>

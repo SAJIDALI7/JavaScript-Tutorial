@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modilfying nodes with data</title>
+</head>
+<body>
+    <h2 id="t2">hello, world</h2>
+
+    <script>
+        let a = document.getElementById('t2');
+
+        // console.log(a.innerText);
+        // console.log(a.firstChild.data);
+        a.firstChild.data = "this is replaced";
+
+        console.log(a);
+    </script>
+</body>
+</html>

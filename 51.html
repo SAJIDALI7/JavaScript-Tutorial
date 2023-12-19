@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying data | split text</title>
+</head>
+<body>
+    <h2 id="h">hello, world</h2>
+
+    <script>
+        let a = document.getElementById("h");
+        a.firstChild.splitText(3)
+        console.log(a.childNodes);
+    </script>
+</body>
+</html>
