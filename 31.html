@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together All Creating nodes</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>thi sheading</h1>
+        <h2>sub heading</h2>
+    </div>
+
+    <script>
+        let a = document.createElement("h4");
+        let b = document.createTextNode("this is Text Node");
+        let c = document.createComment("this is comment");
+        let target = document.getElementById('myid');
+
+        a.appendChild(b)
+        console.log(b);
+        target.appendChild(a)
+        target.appendChild(c)
+        console.log(target);
+    </script>
+</body>
+</html>

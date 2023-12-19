@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Fragment</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>this is heading</h1>
+        <h2>this is sub heading</h2>
+    </div>
+
+    <script>
+        let target = document.getElementById('myid');
+
+        // document Fragment
+        let b = document.createDocumentFragment();
+
+        // element Creeating
+        let c = document.createElement('h4');
+
+        //text creating
+        let d = document.createTextNode("this is demo");
+
+        // appending text in element
+        c.appendChild(d)
+        console.log(c);
+
+        // appeding element into Document Fragment
+        b.appendChild(c);
+        console.log(b);
+
+        // appending document fragment into div
+        target.appendChild(b);
+        console.log(target);
+    </script>
+</body>
+</html>

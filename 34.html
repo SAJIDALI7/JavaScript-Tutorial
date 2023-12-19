@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before</title>
+</head>
+<body>
+
+    <!-- <li id="myid1">hello, world</li> -->
+    <ul id="myid">
+        <li>React Js</li>
+        <li id="agid">Angular Js</li>
+        <li>NExt Js</li>
+        <li id="myid3">Coffee js</li>
+    </ul>
+
+    <!--  -->
+    <ul>
+        <li>JSV FILE</li>
+        <li id="ext">NODE FILE</li>
+    </ul>
+
+
+    <script>
+        // let pNode = document.getElementById('myid');
+
+        // let newnode = document.createElement("li");
+
+        // newnode.appendChild(document.createTextNode("typeScript"))
+
+        // let refnode = document.getElementById('agid');
+
+        // pNode.insertBefore(newnode, refnode)
+        // console.log(pNode);
+
+        // IF element Node is existing
+
+        // let target = document.getElementById('myid');
+
+        // let refnode = document.getElementById("myid3")
+
+        // let existingNode = document.getElementById("myid1");
+
+        // target.insertBefore(existingNode, refnode)
+        // console.log(target);
+
+        // Inserting text Node
+
+        // let a = document.getElementById('myid');
+        // let b = document.getElementById('agid');
+        // let create =  document.createTextNode("DOM");
+        // a.insertBefore(create, b)
+        // console.log(a);
+
+        // existing node to move perent node
+
+        let a = document.getElementById("myid");
+
+        let b = document.getElementById('ext');
+
+        let c = document.getElementById('agid')
+
+        a.insertBefore(b, c)
+        console.log(a);
+    </script>
+</body>
+</html>
