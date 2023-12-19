@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsertAdjacentHTML</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="w3"> hello, world </h1>
+        <h2 id="w2">  small hello, world </h2>
+        <h4 id="w4">  too small hello, world </h4>
+    </div>
+
+    <script>
+        let a = document.getElementById('myid');
+
+        let html = "<span> this is newly added </span> <br>";
+
+        let refnode = document.getElementById('w2');
+
+        refnode.insertAdjacentHTML('beforebegin', html);
+        refnode.insertAdjacentHTML('afterbegin', html);
+        refnode.insertAdjacentHTML('beforeend', html);
+        refnode.insertAdjacentHTML('afterend', html);
+
+        console.log(a);
+    </script>
+</body>
+</html>

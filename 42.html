@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPY node | clonenode</title>
+</head>
+<body>
+    <ul id="myid">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+    <div id="mydiv">
+
+    </div>
+    <script>
+        let a = document.getElementById('myid');
+
+        let duplicate1 = a.cloneNode(false); // without any children and another stuff
+        let duplicate2 = a.cloneNode(true); // with children and element or text contains
+        let d = document.getElementById('mydiv');
+        d.appendChild(duplicate2)
+        console.log(d);
+        console.log(document.body);
+        // console.log(duplicate1);
+        // console.log(duplicate2);
+    </script>
+</body>
+</html>

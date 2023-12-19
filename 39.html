@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTER HTML</title>
+</head>
+<body>
+    <div id="mydiv">
+        <ul id="myid">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </div>
+
+    <script>
+        let a = document.getElementById("mydiv");
+        let b = document.getElementById('myid')
+        // b.innerHTML = " "; replacing empty text
+        // console.log(b);
+
+        // replacing another content
+
+        b.outerHTML = "<p>this is replacing text to text</p>"
+        console.log(a);
+    </script>
+</body>
+</html>
