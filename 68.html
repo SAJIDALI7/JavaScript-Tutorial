@@ -39,6 +39,7 @@
     <script>
         let a = document.getElementById("mytab");
         let b = a.rows;
+
         // console.log(b); // accessing colletion of rows
         // console.log(b[1].cells.length); // accessing length on cells
         // console.log(b[0].cells[1]); // accessing perticulor cells value
@@ -47,9 +48,19 @@
         // console.log(b[2].cells.namedItem('mytd')); // if id or class exists in table data it return data
 
         // if row index number is not exists it return NULL
+        // b[2].cells[2].innerHTML = '4.7'
+        // console.log(b[2].cells[2].innerHTML); 
         
-        console.log(b[2].cells[2].innerHTML); 
-        
+        // let c = b[0].insertCell(3);
+        // let c1 = b[1].insertCell(3);
+        // let c2 = b[2].insertCell(3);
+        // let c3 = b[3].insertCell(3);
+        // c.innerHTML = "fess";
+        // c1.innerHTML = "1000";
+        // c2.innerHTML = "1100";
+        // c3.innerHTML = "1300";
+        b[0].deleteCell(0);
+        // console.log(a);  
     </script>
 </body>
 </html>

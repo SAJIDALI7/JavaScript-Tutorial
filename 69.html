@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text content</title>
+</head>
+<body>
+    <p id="myid">This is<span>Para</span><em>Graph</em></p>
+
+    <script>
+        let a = document.getElementById("myid");
+        a.textContent = "hello world" // it is over write all over contains tag an element and return single text in paragraph tag
+        
+        console.log(a.textContent);
+        console.log(a);
+    </script>
+</body>
+</html>
+
