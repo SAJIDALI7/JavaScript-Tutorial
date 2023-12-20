@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDEventListner</title>
+</head>
+<body>
+    <h1>Add event listener</h1>
+    <button id="btn">submit</button>
+
+    <script>
+        function show(){
+            alert("this is function 1");
+        }
+        function show2(){
+            alert("this is function 2");
+        }
+        let a = document.getElementById("btn");
+        a.addEventListener("click", show)
+        a.addEventListener("click", show2)
+
+    </script>
+</body>
+</html>

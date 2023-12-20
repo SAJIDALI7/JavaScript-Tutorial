@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Evene listener</title>
+</head>
+<body>
+    <h2>Remove Event listener</h2>
+    <button id="myid">Clicked Me</button>
+
+    <script>
+        function show(){
+            alert("this function 1")
+        }
+        let a = document.getElementById("myid");
+        a.addEventListener("click", show, false)
+        a.addEventListener("click", show, true) 
+        //remove event listner
+        a.removeEventListener("click", show, true)
+    </script>
+</body>
+</html>

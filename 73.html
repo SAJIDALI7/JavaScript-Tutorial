@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwrite event handler</title>
+</head>
+<body>
+    <h2>Evenet Overwrite handler</h2>
+    <button id="myid">Submit</button>
+
+    <script>
+        let a = document.getElementById('myid');
+
+        a.onclick = function ds(){
+            alert("this is message");
+        }
+
+        //this will be overwrite all over the function 
+
+        a.onclick = function ds2(){
+            alert("this is new message arrived");
+        }
+    </script>
+</body>
+</html>

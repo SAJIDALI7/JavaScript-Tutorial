@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textcontent & InnerHTML</title>
+</head>
+<body>
+    <p id="myid"></p>
+
+    <script>
+        let a = document.getElementById("myid");
+        // a.textContent = "textContent"
+        // a.textContent = "<em>textContent</em>" //  it return as it is in this line of text
+        // a.innerHTML = "<em>textContent</em>" //  it return as A HTML tag reference
+        a.innerHTML = "<i>textContent</i>"
+        console.log(a);
+    </script>
+</body>
+</html>
