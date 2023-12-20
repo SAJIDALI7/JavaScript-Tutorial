@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Thead & Delete THead</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>This is caption</caption>
+        <thead>
+            <tr>
+                <th>no. </th>
+                <th>Student. </th>
+                <th>Rank. </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Rohan</td>
+                <td>3.4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>11</td>
+                <td>talnet</td>
+                <td>5.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let a = document.getElementById("mytab");
+        // let s = a.createTHead(); //  if table head is exists then it will be return or no it will be create a empty table head
+        // s.innerHTML = "<tr><th>number. </th><th>name </th><th>grade </th></tr>"        
+        // console.log(s);
+        // document.write(s.innerHTML)
+
+        a.deleteTHead(); // this will delete table head with data
+    </script>
+</body>
+</html>

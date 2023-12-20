@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create table foot & Delete table foot</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>New Table</caption>
+        <thead>
+            <tr>
+                <th>No. </th>
+                <th>Name </th>
+                <th>Rank </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Raj</td>
+                <td>3.30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>12</td>
+                <td>Tank</td>
+                <td>2.9</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let a = document.getElementById('mytab');
+        // let b = a.createTFoot();  // it will be return if table foot data is exists or create blank table foot
+        // b.innerHTML = "<tfoot><tr><td>14</td><td>Jack</td><td>3.0</td></tr></tfoot>";
+        // document.write(b.innerHTML) 
+        
+        // console.log(b);
+
+        a.deleteTFoot();
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE ELEMENT & Java Script property</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>My table Caption</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>rank</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rohit</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Rohan</td>
+                <td>2.8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>55</td>
+                <td>raj</td>
+                <td>5.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let a = document.getElementById("mytab");
+        // acces caption content
+        // let b = a.caption;
+        // console.log(b);
+        // b.innerHTML = "caption";
+        // document.write(b.innerHTML + '<br>')       
+
+        // access table head
+        // let b = a.tHead;
+        // b.innerHTML = "<tr><th>NO. </th><th>Student </th><th>Grade. </th></tr>"
+        // document.write(b)
+        // console.log(b);
+
+        // access table foot
+
+        // let b = a.tFoot;
+        // b.innerHTML = "<tr><td>13</td><td>regilar </td><td>3.33 </td></tr>";
+        // document.write(b.innerHTML)
+        // console.log(b);
+
+        // access table Body tag data
+
+        let b = a.tBodies;
+        // console.log(b); // collection of table bodies
+        // console.log(b.length); // lenngth of table body contain data
+        console.log(b);
+        document.write(b[0].innerHTML)
+    </script>
+</body>
+</html>

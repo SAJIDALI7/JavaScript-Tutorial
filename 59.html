@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List property</title>
+    <style>
+        .myclass1{
+            background-color: olive;
+        }
+        .myclass2{
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <p id="ie" class="myclass2 myclass3" style="color: yellow;">this is paragraph</p>
+
+    <script>
+        let a = document.getElementById("ie");
+        let ele = a.classList;
+        // console.log(ele);
+        // console.log(ele.length);
+        // console.log(ele.value);
+        // console.log(ele.item(0));
+        // ele.add("myclass4")
+
+        // ele.remove("myclass3")
+        // ele.remove("myclass2")
+        // ele.replace("myclass2", "myclass1")
+        // let b = ele.contains('myclass2') //return boolean value
+        ele.toggle('myclass2');
+        ele.toggle('myclass2');
+        // console.log(b);
+        console.log(ele);
+        // console.log(a);
+    </script>
+</body>
+</html>

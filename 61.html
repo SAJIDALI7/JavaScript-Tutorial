@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed style & get Computed Style</title>
+    <style>
+        .myclass2{
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="myid" class="myclass2" style="color: brown;">This is paragraph</p>
+
+    <script>
+        let a = document.getElementById('myid');
+        let b = window.getComputedStyle(a)       // this is only for read
+        // console.log(b[23]);
+        // console.log(b.fontStyle);
+
+        let c = a.style;
+        // console.log(c.fontSize); // this return empty string
+        c.fontSize = "50px";
+
+        console.log(a);
+    </script>
+</body>
+</html>

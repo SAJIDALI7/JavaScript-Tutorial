@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create caption & delete Caption</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>this is table</caption>
+        <thead>
+            <tr>
+                <th>No. </th>
+                <th>Student </th>
+                <th>rank </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Rohan</td>
+                <td>2.9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>33</td>
+                <td>Hello</td>
+                <td>3.9</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        let a = document.getElementById("mytab");
+        let b = a.createCaption(); //  it's create empty caption
+        document.write(b.innerHTML);
+        console.log(b.innerHTML);
+        b.innerHTML = "New Caption"; // new cation  adding
+        console.log(b);
+        a.deleteCaption(); // this will Delete caption tag with data
+    </script>
+</body>
+</html>

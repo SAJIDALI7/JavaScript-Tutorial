@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS STYLE DECLARATION OBJECT</title>
+</head>
+<body>
+    <p id="myid" style="background-color: darkgray;color: black !important;">This is paragraph</p>
+
+
+    <script>
+        let a = document.getElementById('myid');
+
+        let s = a.style; // CSS style declaration property object
+        // console.log(s.length);
+        // s.cssText = "font-size:40px; color:red;"
+        // console.log(s.item(1));
+        // console.log(s[1]);
+
+        //get css property value 
+
+        // let b = s.getPropertyValue('background-color');
+        // s.setProperty('font-size', '100px')
+        let d = s.getPropertyPriority('color')
+        console.log(d);
+
+        console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table selection element</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>Caption</caption>
+        <thead>
+            <tr>
+                <th>No. </th>
+                <th>Name </th>
+                <th>Rank </th>
+            </tr>
+        </thead>
+        <tbody id="mytbody">
+            <tr>
+                <td>11</td>
+                <td>rahul</td>
+                <td>2.2</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>rohit</td>
+                <td>2.4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>13</td>
+                <td>rahil</td>
+                <td>3.8</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let a = document.getElementById('mytbody');
+        // let b = a.rows;                          
+        // b[1].innerHTML = "<td>14</td><td>jyoti</td><td>3.4</td>"; if row is exists then over write his data
+
+        // let b = a.insertRow(-1); // insert rows
+        // b.insertCell().textContent = "33"
+        // console.log(b);
+        // b.insertCell
+
+        a.deleteRow(1)
+
+    </script>
+</body>
+</html>

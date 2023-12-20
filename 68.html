@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE ROW</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>this is caption</caption>
+        <thead>
+            <tr>
+                <th>no. </th>
+                <th>Name. </th>
+                <th>Rank. </th>
+            </tr>
+        </thead>
+        <tbody id="mytbody">
+            <tr>
+                <td>11</td>
+                <td>rahul</td>
+                <td>4.4</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>rakul</td>
+                <td id="mytd">4.2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>14</td>
+                <td>rohn</td>
+                <td>3.3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        let a = document.getElementById("mytab");
+        let b = a.rows;
+        // console.log(b); // accessing colletion of rows
+        // console.log(b[1].cells.length); // accessing length on cells
+        // console.log(b[0].cells[1]); // accessing perticulor cells value
+        // console.log(b[0].cells.item(2));
+
+        // console.log(b[2].cells.namedItem('mytd')); // if id or class exists in table data it return data
+
+        // if row index number is not exists it return NULL
+        
+        console.log(b[2].cells[2].innerHTML); 
+        
+    </script>
+</body>
+</html>

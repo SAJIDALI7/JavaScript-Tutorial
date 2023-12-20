@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Row & Delete Row</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>this is caption</caption>
+        <thead>
+            <tr>
+                <th>No. </th>
+                <th>Name </th>
+                <th>Rank </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>white</td>
+                <td>3.3</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Smidth</td>
+                <td>3.9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>13</td>
+                <td>jack</td>
+                <td>4.0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <script>
+        let a = document.getElementById('mytab');
+        // let b = a.insertRow(1); // it wil be retrun empty row no cell data
+        // b.insertCell(0).textContent = "22";
+        // b.insertCell(1).textContent = "aksh";
+        // b.insertCell(2).textContent = "2.1";
+        // console.log(b);
+        
+        a.deleteRow(2)
+
+    </script>
+</body>
+</html>
