@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Event</title>
+</head>
+<body>
+    <h2>Focus Event</h2>
+    <!-- Name:- <input type="text" id="myname"> -->
+
+    <div id="mydiv" style="width: 300px;height: 100px;background-color: aquamarine;padding: 10px;">
+        Name:- <input type="text" id="myname">
+    </div>
+
+    <script>
+        let a = document.getElementById("myname");
+        function show(e){
+            a.style.backgroundColor = "lightblue";
+        }
+        function show2(e){
+            a.style.backgroundColor = "white";
+        }
+
+        a.addEventListener("focus", show) // this is no  to bubble up 
+        a.addEventListener("blur", show2) // this is no to bubble up 
+        a.addEventListener("focusin", show) // this is bubble up 
+        a.addEventListener("focusout", show2) // this is bubble up 
+    </script>
+</body>
+</html>

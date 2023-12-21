@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <h2>Mouse Event</h2>
+    <!-- <div id="one" style="width: 100px;height: 100px;background-color: red;">
+        <div id="two" style="width: 60px;height: 60px;background-color: black;">
+        </div>
+    </div> -->
+
+    <label for="email">Email Address</label>
+    <input type="email" name="email" id="email">
+
+    <script>
+        // function show(e){
+        //     console.log(e.type);
+        // }
+
+        // function show2(e){
+        //     console.log(e.type);
+        // }
+
+        // let a = document.getElementById("one");
+        // let b = document.getElementById("two");
+        
+        
+        //wihout bubble phaes
+        // a.addEventListener("mousedown", show, false); // when the mouse button clicked
+        // a.addEventListener("mouseup", show, false); // when the mouse button clicked then release
+        // a.addEventListener("click", show, false); // when the clicked any object or element 
+        // a.addEventListener("dblclick", show, false); // when the double time clicked any object or element 
+        // a.addEventListener("mouseenter", show, false); // when the mouse hover any object    
+        // a.addEventListener("mouseleave", show, false); // when the mouse leave any object    
+        // a.addEventListener("mouseover", show, false); // when the mouse enter any object    
+        // a.addEventListener("mouseout", show, false); // when the mouse leave any object    
+        // a.addEventListener("mousemove", show, false); // when the mouse enter and something move on the any object    
+        // a.addEventListener("contextmenu", show, false); // when the right clicked on the mouse 
+
+        //with bubble up phase
+        
+        // b.addEventListener("click", show2, false);
+        // a.addEventListener("click", show, false);
+        // b.addEventListener("mouseenter", show2, false);
+        // a.addEventListener("mouseenter", show, false);
+        
+        let a = document.getElementById("email");
+        
+        function show1(e){
+            a.style.backgroundColor = "orange";
+        }
+        function show2(e){
+            a.style.backgroundColor = "white";
+        }
+
+        a.addEventListener("mouseover", show1, false);
+        a.addEventListener("mouseout", show2, false);
+
+    </script>
+</body>
+</html>

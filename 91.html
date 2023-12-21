@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizing Window</title>
+</head>
+<body>
+    
+    <h2>Resizing Window</h2>
+
+    <button type="button" id="openbtn">Open Window</button>
+    <button type="button" id="resizebtn">Resize Window</button>
+
+    <script>
+        let newWindow;
+
+        function openWin(){
+            newWindow = window.open("", "_blank", "height=200, width=300");
+            newWindow.document.write("This is a new Window opening by Chrome")
+        }
+
+        // Resizing By
+        // function resizeWin(){
+        //     newWindow.resizeBy(200, 200);
+        //     newWindow.focus();
+        // }
+
+        // Resizing To
+        function resizeWin(){
+            newWindow.resizeTo(200, 200);
+            newWindow.focus();
+        }
+
+        document.getElementById("openbtn").addEventListener("click", openWin);
+        document.getElementById("resizebtn").addEventListener("click", resizeWin);
+
+    </script>
+</body>
+</html>

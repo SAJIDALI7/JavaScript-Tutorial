@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Event</title>
+</head>
+<body>
+    <h2>Text Event</h2>
+    Name: - <input type="text" id="myid">
+
+
+    <script>
+        let a = document.getElementById("myid");
+
+        function fe(e){
+            console.log(e.type + "  " + e.data);
+        }
+
+        a.addEventListener("textInput", fe, false)
+    </script>
+</body>
+</html>

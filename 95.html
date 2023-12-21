@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout & clear Timeout</title>
+</head>
+<body>
+    <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, temporibus. Aut magnam enim aperiam soluta animi cupiditate nemo perspiciatis porro adipisci saepe tempora eum nostrum facilis ullam deserunt, at numquam illum deleniti ducimus expedita corrupti laborum ratione maiores. Sapiente corrupti optio molestiae nemo ullam. Ea velit veritatis iure iste mollitia!</p>
+    <button type="button" id="mybtn">Clear Time</button>
+    <script>
+        let a = setTimeout(()=> {
+            document.getElementById("myp").style = "color:red";
+        }, 3000)
+
+        function clrtime(){
+            clearTimeout(a);
+        }
+
+        document.getElementById("mybtn").addEventListener("click", clrtime)
+    </script>    
+</body>
+</html>

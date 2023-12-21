@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopPropagation & stopImmediatePropogation</title>
+    <style>
+        #one{
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+        }
+        #two{
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+        #three{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>StopPropagation & stopImmediatePropogation</h2>
+
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function div1(e){
+            this.style.backgroundColor = "blue";
+        }
+        function div2(e){
+            this.style.backgroundColor = "red"; // implement stopimmediatepropagation
+            e.stopImmediatePropagation();
+        }
+        function div2_2(e){
+            this.style.width = "350px";
+            e.stopPropagation();
+        }
+        function div3(e){
+            this.style.backgroundColor = "green"; // emplement stp propagation
+            
+        }
+
+        let a = document.getElementById('one');
+        let b = document.getElementById('two');
+        let c = document.getElementById('two');
+        let d = document.getElementById('three');
+
+        a.addEventListener("click", div1, false);
+        b.addEventListener("click", div2, false);
+        c.addEventListener("click", div2_2, false);
+        d.addEventListener("click", div3, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Event</title>
+</head>
+<body>
+    <h2>Key Event</h2>
+    Name : - <input type="text" id="mytxt">
+
+    <script>
+        let a = document.getElementById("mytxt");
+
+        function key(e){
+            console.log(e.type + "  " + e.keyCode + "  " + String.fromCharCode(e.keyCode));
+        }
+
+        a.addEventListener("keydown", key, false)
+        a.addEventListener("keypress", key, false)
+        a.addEventListener("keyup", key, false)
+    </script>
+</body>
+</html>

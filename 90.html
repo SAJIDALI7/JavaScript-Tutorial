@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Windows</title>
+</head>
+<body>
+    <h2>Moving Window</h2>
+
+    <button type="button" id="openbtn">Open window</button>
+    <button type="button" id="movebtn">Move Window</button>
+
+    <script>
+        let newWindow;
+
+        function openWin(){
+            newWindow = window.open("", "newWindow", "height=200, width=300");
+            newWindow.document.write("This is new Window");
+        }
+        // Move By
+        // function moveWin(){
+        //     newWindow.moveBy(200, 200);
+        //     newWindow.focus();
+        // }
+
+        //Move to
+        function moveWin(){
+            newWindow.moveTo(200, 200);
+            newWindow.focus();
+        }
+
+        document.getElementById("openbtn").addEventListener("click", openWin);
+        document.getElementById("movebtn").addEventListener("click", moveWin);
+    </script>
+</body>
+</html>
