@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="" name="myform">
+        UserName:- <input type="text" name="m_username_field" id="m_u_id"> <small id="u_small"></small><br><br>
+        <input type="submit" name="m_sbtn" id="m_sbtn_id" value="Submit">
+    </form>
+
+
+    <script>
+        const a = document.myform.m_username_field;
+        
+
+        // valiDate With color
+        // function Validation(){
+        //     let b = /^([^0-9\W]*)$/;
+        //     if(b.test(a.value)){
+        //         a.style.backgroundColor = "green";
+        //     }else{
+        //         a.style.backgroundColor = "red";
+        //     }
+        // }
+
+        // validate with Message through 
+        function Validation(){
+            let b = /^([^0-9\W]*)$/;
+            if(b.test(a.value)){
+                document.getElementById("u_small").textContent = "UserName is Valid";
+                document.getElementById("u_small").style.color = "green";
+            }else{
+                document.getElementById("u_small").textContent = "UserName is InValid";
+                document.getElementById("u_small").style.color = "red";
+            }
+        }
+
+        a.addEventListener("keyup", Validation);
+
+    </script>
+</body>
+</html>

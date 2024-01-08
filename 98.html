@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Accesing</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        UserName:- <input type="text" name="m_username_field"><br><br>
+        Password:- <input type="password" name="m_password_field"><br><br>
+        <input type="submit" name="m_btn_field" value="Submit"><br><br>
+    </form>
+
+    <hr>
+    <form action="" name="yourform" id="yourformid">
+        UserName:- <input type="text" name="y_username_field"><br><br>
+        Password:- <input type="password" name="y_password_field"><br><br>
+        <input type="submit" name="y_btn_field" value="Submit"><br><br>
+    </form>
+
+    <script>
+        // with IndexNumber accessing Form field [0]
+        // let a = document.forms[0];
+        // console.log(a);
+
+        // [1]
+        // let a = document.forms[1];
+        // console.log(a);
+
+
+        // with Name Atrribute accessing Form field using Square bracket ["myform"]
+        // let a = document.forms["myform"];
+        // console.log(a);
+
+        // ["yourform"]
+        // let a = document.forms["yourform"];
+        // console.log(a);
+
+        //with Name Atrribute accessing Form field using dot .myform
+        // let a = document.myform;
+        // console.log(a);
+
+        // .yourform
+        // let a = document.yourform;
+        // console.log(a);
+
+        // accessign form using element ID "myformid"
+        // let a = document.getElementById("myform");
+        // console.log(a);
+
+        // "Yourformid"
+        // let a = document.getElementById("yourformid");
+        // console.log(a);
+    </script>
+</body>
+</html>

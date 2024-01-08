@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set multiple Cookie And Read </title>
+</head>
+<body>
+    
+    <h2>Cookie Redaing</h2>
+
+
+    <script>
+        document.cookie = "username=figma";
+
+        // this will be append to server listo of cookie
+        document.cookie = "userid=figma1"
+
+        // this is for reading how many cookie this server create And what his data
+        alert(document.cookie)
+
+        // Or You can saw this cookie data in console
+        console.log(document.cookie);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY & Catch & Finally & Throw</title>
+</head>
+<body>
+    <h2>Exception Handling</h2>
+
+    <script>
+        // try{
+        //     // add();
+        //     document.write("this is define <br>")
+        // }
+        // // catch (e){
+        // //     document.write("Massage = " + e.message + "<br>");
+        // //     document.write("Name Of Error = " + e.name + "<br>");
+        // //     document.write("path of Error = " + e.stack + "<br>");
+        // // }
+
+        // // write custom Message
+        // catch (e){
+        //     document.write("this is not Define <br>")
+        // }
+
+        // finally{
+        //     document.write("this is finally it's must be executed <br>")
+        // }
+
+        function getrect(w, h){
+            if( isNaN(w) || isNaN(h)){
+                throw "thie is not define"
+            }
+        }
+        try{
+            getrect(10, 'A');
+        }
+        catch (e){
+            document.write(e)
+        }
+        finally{
+            document.write("<br><br> i have no idea What do i next step")
+        }
+    </script>
+</body>
+</html>

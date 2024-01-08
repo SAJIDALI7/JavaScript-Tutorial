@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form field acessing</title>
+</head>
+<body>
+    
+    <form action="" name="myform" id="myformid">
+        UserName:- <input type="text" id="m_u_id" name="m_username_field"> <br><br>
+        Password:- <input type="password" id="m_p_id" name="m_password_field"> <br><br>
+        <input type="submit" name="m_sbtn" value="Submit" id="y_sbtn"> <br><br>
+    </form>
+
+    <script>
+        // accessing form field with ID : "m_u_id"
+        // let a = document.getElementById("m_u_id");
+        // console.log(a);
+        // console.log(a.name); // attribute Value
+        // console.log(a.type); // type of input
+        // console.log(a.id); // accessing Id Value
+
+        // "m_p_id"
+        // let a = document.getElementById("m_p_id");
+        // console.log(a);
+        // console.log(a.name); // attribute Value
+        // console.log(a.type); // type of input
+        // console.log(a.id); // accessing Id Value
+
+        //accessing form field with Elements [Index Number] is[0] = Username
+        // let a = document.myform.elements[0];
+                        //formAttributename 
+        // console.log(a);                              
+        // console.log(a.name);                              
+        // console.log(a.type);                              
+        // console.log(a.id);                  
+        
+        // is [1] = Password
+        // let a = document.myform.elements[1];
+        // console.log(a);                              
+        // console.log(a.name);                              
+        // console.log(a.type);                              
+        // console.log(a.id); 
+        
+        //accessing form field with Elements with name Attribute is [m_username_field]
+
+        // let a = document.myform.elements['m_username_field'];
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+        // is [m_password_field]
+        // let a = document.myform.elements['m_password_field'];
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+        // Direct pass Attribute name just like "m_username_field"
+        
+        // let a = document.myform.m_username_field;
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+        // just like "m_password_field"
+        // let a = document.myform.m_password_field;
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+
+        //  Or Direct pass ID value just like "m_u_id"
+        
+        // let a = document.myform.m_u_id;
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+        // just like "m_p_id"
+        // let a = document.myform.m_p_id;
+        // console.log(a);
+        // console.log(a.name);
+        // console.log(a.type);
+        // console.log(a.id);
+
+        // set A default value 
+        // let a = document.myform.m_u_id;
+        // a.value = "reah";
+        // console.log(a.value);
+
+
+    </script>
+</body>
+</html>

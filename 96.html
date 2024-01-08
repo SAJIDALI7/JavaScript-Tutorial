@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval & get Interval</title>
+</head>
+<body>
+    <h2> Set Interval </h2>
+    <div id="mydiv">
+
+    </div>
+    <button type="button" id="mybtn">Clear TimeOut</button>
+    <script>
+        // function runtext(){
+        //     document.getElementById("mydiv").textContent += "Hello, World!"
+        // }
+        // setInterval(runtext, 3000)
+
+        let a = setInterval(function(){
+            document.getElementById("mydiv").textContent += "Hello, World!";
+        }, 3000)
+
+        function clrtime(){
+            clearInterval(a)
+        }
+        document.getElementById("mybtn").addEventListener("click", clrtime)
+    </script>
+</body>
+</html>
