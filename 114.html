@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagged Template</title>
+</head>
+<body>
+    <h1>Tagged Ttemplate</h1>
+
+    <script>
+        let tot_ticket = 5;
+        let price_ticket = 200;
+        let discount_ticket = 50;
+        let total_buyied = 5;
+
+
+        function ticket(theory, tticket, pprice, buyprice, dprice) {
+            return theory;
+        }
+
+        document.write(ticket`there are ${tot_ticket} movie tickets.
+        Each Rs. ${price_ticket} and if you buy ${total_buyied} tickets 
+        get discount Rs. ${discount_ticket} Each`)
+
+        console.log(ticket`there are ${tot_ticket} movie tickets.
+        Each Rs. ${price_ticket} and if you buy ${total_buyied} tickets 
+        get discount Rs. ${discount_ticket} Each`);
+    </script>
+</body>
+</html>
