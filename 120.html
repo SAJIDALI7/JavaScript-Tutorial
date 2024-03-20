@@ -3,17 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split Method</title>
+    <title>Promise Async & Await</title>
 </head>
 <body>
-    <h1>Split Method</h1>
+
 
     <script>
-        let a = "Hi guys lets Learn JavaScript";
-        let b = a.split(" ");
-        document.write(b);
+        // synchronous function 
 
-        console.log(b); 
+        // function myfunc(){
+        //     console.log("inside Function");
+        // }
+
+        // console.log("Start");
+        // myfunc()
+        // console.log("End");
+
+        
+        
+        // Asynchronous Function
+        // console.log("Start");
+        // setTimeout(()=> {
+        //     console.log("inside Function");
+        // }, 3000)
+        // console.log("End");
+
+        
+        
+        // call back Synchronous function
+
+        // console.log("Start");
+        // const roll = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // roll.forEach(r => {
+        //     console.log(r);
+        // })
+        // console.log("End");
+
+
+        // right Way to call back function 
+
+        // console.log("Start ->");
+        // function getName(name, callback){
+        //     setTimeout(()=> {
+        //         console.log("inside Function");
+        //         return callback(name);
+        //     }, 3000);
+        // }
+
+        // const nm = getName("jacky", (nm) => { console.log(nm) });
+
+        // console.log("End ^");
+
+        // callback Hell
+
+
+        console.log("Start ->");
+        function getName(name, callback){
+            setTimeout(()=> {
+                console.log("inside name Function");
+                return callback(name);
+            }, 3000);
+        }
+
+        function getHobbies(name, callback){
+            setTimeout(()=> {
+                console.log("inside Hobbies Function");
+                callback(['Cricket', 'reading', "Dancing"]);
+            }, 3000);
+        }
+
+        const nm = getName("jacky", (nm) => { console.log(nm);
+        getHobbies(nm, (hobby) => { console.log(hobby)  }) });
+
+        console.log("End ^");
     </script>
 </body>
 </html>
